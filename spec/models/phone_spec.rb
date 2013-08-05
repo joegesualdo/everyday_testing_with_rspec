@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Phone do
-  describe Phone do
     it "does not allow duplicate phone numbers per contact" do
       contact = Contact.create(firstname: 'Joe', lastname: 'Tester',
                                email: 'joetester@example.com')
@@ -24,5 +23,4 @@ describe Phone do
 
       expect(other_phone).to be_valid
     end
-    24 end
 end
