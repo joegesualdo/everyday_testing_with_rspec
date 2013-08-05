@@ -5,4 +5,8 @@ class Contact < ActiveRecord::Base
   validates_uniqueness_of :email
 
   has_many :phones
+
+  def name
+    "#{self.firstname} #{self.lastname}"
+  end
 end
