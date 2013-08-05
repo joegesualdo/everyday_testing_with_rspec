@@ -6,8 +6,8 @@ FactoryGirl.define do
     email Faker::Internet.email
     message Faker::Lorem.paragraph
 
-    factory :invalid_messages do
-      email nil
+    factory :invalid_message do
+      email ""
     end
   end
 end

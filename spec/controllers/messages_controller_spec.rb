@@ -21,52 +21,137 @@ require 'spec_helper'
 describe MessagesController do
 
   describe 'GET #index' do
-    it "populates an array of messages"
-    it "renders the :index view"
+    it "populates an array of messages" do
+      message = create(:message)
+      get :index
+      expect(assigns(:messages)).to match_array [message]
+    end
+    it "renders the :index view" do
+      get :index
+      expect(response).to render_template :index
+    end
   end
 
   describe 'GET #show' do
-   it "assigns the requested message to @message"
-   it "renders the :show template"
+    it "assigns the requested message to @message"  do
+      message = create(:message)
+      get :show, id: message
+      expect(assigns(:message)).to eq message
+    end
+   it "renders the :show template" do
+     message = create(:message)
+     get :show, id: message
+     expect(response).to render_template :show
+   end
   end
 
   describe 'GET #new' do
-   it "assigns a new Message to @message"
-   it "renders the :new template"
+   it "assigns a new Message to @message" do
+     get :new
+     expect(assigns(:message)).to be_a_new(Message)
+   end
+   it "renders the :new template" do
+     get :new
+     expect(response).to render_template :new
+   end
   end
 
   describe 'GET #edit' do
-    it "assigns the requested message to @message"
-    it "renders the :edit template"
+    it "assigns the requested message to @message" do
+      message = create(:message)
+      get :edit, id: message
+      expect(assigns(:message)).to eq message
+    end
+    it "renders the :edit template" do
+      message = create(:message)
+      get :edit, id: message
+      expect(response).to render_template :edit
+
+    end
   end
 
   describe "POST #create" do
     context "with valid attributes" do
-      it "saves the new message in the database"
-      it "redirects to the home page"
+      it "saves the new message in the database" do
+        expect{
+          post :create, message: attributes_for(:message)
+        }.to change(Message, :count).by(1)
+      end
+      it "redirects to the home page" do
+        post :create, message: attributes_for(:message)
+        expect(response).to redirect_to message_path(1)
+      end
     end
 
     context "with invalid attributes" do
-      it "does not save the new message in the database"
-      it "re-renders the :new template"
+      it "does not save the new message in the database" do
+        expect {
+          post :create, message: attributes_for(:invalid_message)
+        }.to_not change(Message, :count)
+      end
+      it "re-renders the :new template" do
+        post :create, message: attributes_for(:invalid_message)
+        expect(response).to render_template :new
+      end
     end
   end
 
   describe 'PUT #update' do
-    context "with valid attributes" do
-      it "updates the message in the database"
-      it "redirects to the message"
+    before :each do
+      @message = create(:message, name: "Aaron Sumner",
+                          email: "aaron@everydayrails.com")
     end
 
-    context "with invalid attributes" do
-      it "does not update the message"
-      it "re-renders the #edit template"
+    it "locates the requested @message" do
+      put :update, id: @message, message: attributes_for(:message)
+      expect(assigns(:message)).to eq(@message)
+    end
+
+    context "valid attributes" do
+      it "changes @message's attributes" do
+        put :update, id: @message,
+        message: attributes_for(:message,
+                                   name: "A. Sumner")
+        @message.reload
+        expect(@message.name).to eq("A. Sumner")
+      end
+
+      it "redirects to the updated message" do
+        put :update, id: @message, message: attributes_for(:message)
+        expect(response).to redirect_to @message
+      end
+    end
+
+    context "invalid attributes" do
+      it "does not change @message's attributes" do
+        put :update, id: @message,
+        message: attributes_for(:message,
+                                  name: "None of your business",
+            email: "")
+        @message.reload
+        expect(@message.name).to_not eq("None of your business")
+      end
+
+      it "re-renders the edit method" do
+        put :update, id: @message, message: attributes_for(:invalid_message)
+        expect(response).to render_template :edit
+      end
     end
   end
 
   describe 'DELETE #destroy' do
-    it "deletes the message from the database"
-    it "redirects to the home page"
+    before :each do
+      @message = create(:message)
+    end
+    it "deletes the message from the database" do
+      expect{
+        delete :destroy , id: @message
+      }.to change(Message, :count).by(-1)
+    end
+    it "redirects to the home page" do
+      delete :destroy, id: @message
+      expect(response).to redirect_to messages_url
+    end
   end
 
   #
