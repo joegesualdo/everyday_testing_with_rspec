@@ -3,4 +3,6 @@ class Contact < ActiveRecord::Base
 
   validates :firstname, :lastname, presence: true
   validates_uniqueness_of :email
+
+  has_many :phones
 end

@@ -7,7 +7,8 @@
     <file path="/Gemfile" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375706796259" ignored="false" />
     <file path="/application.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375707313085" ignored="false" />
     <file path="/contact_spec.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375711617579" ignored="false" />
-    <file path="/contact.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375711655062" ignored="false" />
+    <file path="/contact.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375712870462" ignored="false" />
+    <file path="/phone.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375712832950" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,16 +76,34 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="43" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+            <state line="25" column="30" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20130805143157_add_contact_id_to_phone.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130805143157_add_contact_id_to_phone.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="45" selection-start="110" selection-end="110" vertical-scroll-proportion="0.04901961">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="735" selection-end="735" vertical-scroll-proportion="0.61417323">
+            <state line="29" column="31" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phone.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/phone.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="21" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,7 +112,7 @@
       <file leaf-file-name="contact.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+            <state line="4" column="37" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,6 +133,7 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/spec/models/contact_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/phone.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
       </list>
     </option>
@@ -231,6 +251,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everyday_testing_with_rspec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everyday_testing_with_rspec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -671,23 +709,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+        <state line="29" column="31" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/phone.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+        <state line="4" column="37" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="735" selection-end="735" vertical-scroll-proportion="0.61417323">
+        <state line="25" column="30" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130805143157_add_contact_id_to_phone.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="45" selection-start="110" selection-end="110" vertical-scroll-proportion="0.04901961">
           <folding />
         </state>
       </provider>
