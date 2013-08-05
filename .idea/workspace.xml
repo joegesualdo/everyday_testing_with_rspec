@@ -6,6 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375706796259" ignored="false" />
     <file path="/application.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375707313085" ignored="false" />
+    <file path="/contact_spec.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375710797024" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <file leaf-file-name="contact_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="42" selection-end="42" vertical-scroll-proportion="0.047244094">
+            <state line="17" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="0.4015748">
               <folding />
             </state>
           </provider>
@@ -102,6 +103,7 @@
         <option value="$PROJECT_DIR$/.rspec" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/spec/models/contact_spec.rb" />
       </list>
     </option>
   </component>
@@ -635,7 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="42" selection-end="42" vertical-scroll-proportion="0.047244094">
+        <state line="17" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="0.4015748">
           <folding />
         </state>
       </provider>
