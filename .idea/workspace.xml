@@ -32,7 +32,7 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="32" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+            <state line="37" column="32" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,16 +59,7 @@
       <file leaf-file-name="test.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/test.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="0" selection-start="14552" selection-end="14552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130805143157_add_contact_id_to_phone.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130805143157_add_contact_id_to_phone.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="45" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+            <state line="230" column="0" selection-start="22251" selection-end="22251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -684,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="32" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+        <state line="37" column="32" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -726,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/test.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="14552" selection-end="14552" vertical-scroll-proportion="0.0">
+        <state line="230" column="0" selection-start="22251" selection-end="22251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
