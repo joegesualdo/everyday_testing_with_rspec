@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375706796259" ignored="false" />
     <file path="/application.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375707313085" ignored="false" />
-    <file path="/contact_spec.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375723453837" ignored="false" />
+    <file path="/contact_spec.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375725466931" ignored="false" />
     <file path="/contact.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375716786109" ignored="false" />
     <file path="/phone.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375712832950" ignored="false" />
-    <file path="/contacts.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375721994628" ignored="false" />
+    <file path="/contacts.rb" changelist="56dc8ea8-24b9-41f1-9ce6-06821544899b" time="1375725533167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="24" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phone_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="phone_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/phone_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="67" selection-start="729" selection-end="729" vertical-scroll-proportion="0.41666666">
+            <state line="17" column="19" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,7 +50,16 @@
       <file leaf-file-name="phones.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/factories/phones.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/test.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="152" column="0" selection-start="14552" selection-end="14552" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
       <file leaf-file-name="contact_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+            <state line="32" column="35" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contacts.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/factories/contacts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="7" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.17156863">
               <folding />
             </state>
           </provider>
@@ -135,11 +135,11 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/phone.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/contacts.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/models/phone_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/contact_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/phones.rb" />
-        <option value="$PROJECT_DIR$/spec/models/phone_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/contacts.rb" />
       </list>
     </option>
   </component>
@@ -242,6 +242,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="factories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everyday_testing_with_rspec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everyday_testing_with_rspec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -698,28 +712,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/contact_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/contacts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/phones.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+        <state line="32" column="35" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/phone_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="67" selection-start="729" selection-end="729" vertical-scroll-proportion="0.41666666">
+        <state line="17" column="19" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/test.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="0" selection-start="14552" selection-end="14552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/phones.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/contacts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.17156863">
           <folding />
         </state>
       </provider>
