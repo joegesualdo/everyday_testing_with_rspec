@@ -2,6 +2,12 @@
 
 FactoryGirl.define do
   factory :message do
-    message "MyString"
+    name Faker::Name.name
+    email Faker::Internet.email
+    message Faker::Lorem.paragraph
+
+    factory :invalid_messages do
+      email nil
+    end
   end
 end
