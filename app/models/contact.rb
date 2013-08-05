@@ -9,4 +9,8 @@ class Contact < ActiveRecord::Base
   def name
     "#{self.firstname} #{self.lastname}"
   end
+
+  def self.by_letter(letter)
+    where("lastname LIKE ?", "#{letter}%").order(:lastname)
+  end
 end
